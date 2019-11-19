@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+            <setting name= "mapUnderscoreToCamelCase" value = "true"/>
+            <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
+    <!-- 环境配置 -->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <!-- 数据库连接相关配置 ,这里动态获取config.properties文件中的内容-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver" />
+                <property name="url" value="jdbc:mysql://localhost:3306/bookstore" />
+                <property name="username" value="bk" />
+                <property name="password" value="bk123456@" />
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- mapping文件路径配置 -->
+    <mappers>
+        <mapper resource="mapper/Book.xml"/>
+        <mapper resource="mapper/User.xml"/>
+    </mappers>
+
+</configuration>

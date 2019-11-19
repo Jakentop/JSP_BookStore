@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--id ="接口中的方法名"
+　　parameterType="传入的参数类型"
+　　resultType = "返回实体类对象，使用包.类名"-->
+<mapper namespace="jaken.sql.user">
+
+
+    <select id="findById" parameterType="int" resultType="model.User">
+        select * from user where ID = #{id}
+    </select>
+
+    <insert id="insertUser" >
+        insert into user(UserName, PetName, Sex, Password, E_mail, Auth, TrueName, Address, Phone)
+        VALUES (#{UserName},#{PetName},#{Sex},#{Password},#{E_mail},#{Auth},#{TrueName},#{Address},#{Phone});
+    </insert>
+
+</mapper>
