@@ -1,5 +1,8 @@
 package jaken.ctrl.manage;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.SimplePropertyPreFilter;
+import jaken.fun.message;
 import jaken.sql.SqlSessionFactoryUtil;
 import model.User;
 import org.apache.ibatis.session.SqlSession;
@@ -32,21 +35,24 @@ public class UserRegister extends HttpServlet {
             user.setPhone(request.getParameter("Phone"));
         } catch (Exception e) {
             response.setStatus(500);
-
         }
 
             SqlSession session = SqlSessionFactoryUtil.openSqlSession();
         //        判断是否存在
         int size=session.selectList("jaken.sql.user.findById", user).size();
+        String res;
         if (size == 0) {
             //        写入数据库
             session.insert("jaken.sql.user.insertUser", user);
+
+            res = message.GetMsg("ok", "插入成功",
+                    JSON.toJSONString(user, new SimplePropertyPreFilter(User.class, "Id")));
         }
         else
             session.close();
             System.out.println(user.getId());
         PrintWriter out = response.getWriter();
-        out.println("{\"ok\":\"ok\"}");
+
 
 
 
