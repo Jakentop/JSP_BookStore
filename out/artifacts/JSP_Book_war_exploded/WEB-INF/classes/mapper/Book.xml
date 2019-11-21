@@ -6,10 +6,6 @@
 　　parameterType="传入的参数类型"
 　　resultType = "返回实体类对象，使用包.类名"-->
 <mapper namespace="jaken.sql.Book">
-
-
-    <select id="findById" parameterType="int" resultType="model.Book">
-        select * from users where uid = #{id}
-    </select>
+<!--    查询体-->
 
 </mapper>

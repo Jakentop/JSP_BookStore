@@ -1,6 +1,7 @@
 package fun.json;
 
 import com.alibaba.fastjson.JSON;
+import jaken.fun.message;
 import model.User;
 import org.junit.Test;
 
@@ -19,10 +20,8 @@ public class json {
 
     @Test
     public void mm() {
-        HashMap temp = new HashMap();
-        temp.put("hello", 123);
-        temp.put("hell", new User());
-        System.out.print(JSON.toJSONString(temp));
+        String res=message.GetMsg("err", "出现错误", "发生了错误信息");
+        System.out.print(res);
 
     }
 }

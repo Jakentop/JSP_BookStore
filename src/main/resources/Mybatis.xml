@@ -25,6 +25,12 @@
     <mappers>
         <mapper resource="mapper/Book.xml"/>
         <mapper resource="mapper/User.xml"/>
+        <mapper resource="mapper/Cart.xml"/>
+        <mapper resource="mapper/BookPic.xml"/>
+        <mapper resource="mapper/Order.xml"/>
+        <mapper resource="mapper/OrderGoods.xml"/>
+        <mapper resource="mapper/Picture.xml"/>
+
     </mappers>
 
 </configuration>

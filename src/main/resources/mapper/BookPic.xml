@@ -5,7 +5,7 @@
 <!--id ="接口中的方法名"
 　　parameterType="传入的参数类型"
 　　resultType = "返回实体类对象，使用包.类名"-->
-<mapper namespace="jaken.sql.Book">
-<!--    查询体-->
+<mapper namespace="jaken.sql.BookPic">
+    <!--    查询语句体-->
 
 </mapper>

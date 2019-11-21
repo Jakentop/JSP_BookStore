@@ -1,4 +1,4 @@
-package jaken.ctrl.manage;
+package jaken.ctrl.user;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SimplePropertyPreFilter;
@@ -18,11 +18,17 @@ import java.io.PrintWriter;
 import java.lang.annotation.ElementType;
 import java.util.Dictionary;
 
-@WebServlet(name = "UserRegister",urlPatterns = "/manage/userregister")
-public class UserRegister extends HttpServlet {
+/**
+ * @Description 注册提交接口
+ * @Accept_method POST
+ * @Accept_option UserName,Address,Sex,E_mail,Password,PetName,Phone
+ */
+@WebServlet(name = "Register",urlPatterns = "/user/register")
+public class Register extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
+        response.setCharacterEncoding("utf-8");
         User user = new User();
         try {
             user.setUserName(request.getParameter("UserName"));
@@ -39,24 +45,22 @@ public class UserRegister extends HttpServlet {
 
             SqlSession session = SqlSessionFactoryUtil.openSqlSession();
         //        判断是否存在
-        int size=session.selectList("jaken.sql.user.findById", user).size();
+        int size=session.selectList("jaken.sql.user.findByUserName", user.getUserName()).size();
         String res;
+
         if (size == 0) {
             //        写入数据库
             session.insert("jaken.sql.user.insertUser", user);
-
-            res = message.GetMsg("ok", "插入成功",
-                    JSON.toJSONString(user, new SimplePropertyPreFilter(User.class, "Id")));
+            res = message.GetMsg("ok", "插入成功", message.GetJsonPartInclude(user, "id"));
         }
         else
-            session.close();
-            System.out.println(user.getId());
+        {
+            res = message.GetMsg("err", "插入失败", "用户名重复");
+        }
+        session.close();
+        System.out.println(res);
         PrintWriter out = response.getWriter();
-
-
-
-
-
+        out.print(res);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

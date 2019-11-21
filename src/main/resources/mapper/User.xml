@@ -12,9 +12,18 @@
         select * from user where ID = #{id}
     </select>
 
-    <insert id="insertUser" keyProperty="id"  useGeneratedKeys="true">
+    <!--查找重复-->
+    <select id="findByUserName" parameterType="String" resultType="model.User">
+        select * from user where UserName=#{userName};
+
+    </select>
+    <!--创建用户-->
+    <insert id="insertUser" keyProperty="id" useGeneratedKeys="true">
         insert into user(UserName, PetName, Sex, Password, E_mail, Auth, TrueName, Address, Phone)
         VALUES (#{userName},#{petName},#{sex},#{password},#{e_Mail},#{auth},#{trueName},#{address},#{phone});
     </insert>
-
+    <!--执行登录-->
+    <select id="login" parameterType="model.User" resultType="model.User">
+    select * from user where UserName=#{userName} and Password=#{password} ;
+    </select>
 </mapper>

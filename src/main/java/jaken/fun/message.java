@@ -11,7 +11,7 @@ import java.util.HashMap;
 //
 public class message {
     /**
-     *
+     * @Description 直接将消息返回到response相应中
      * @param response Servlet相应头
      * @param status 状态，ok或err
      * @param msg_title 消息标题

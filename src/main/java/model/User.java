@@ -3,7 +3,7 @@ package model;
 
 public class User {
 
-  private long id;
+  private int id;
   private String userName;
   private String petName;
   private String userPic;
@@ -20,7 +20,7 @@ public class User {
     return id;
   }
 
-  public void setId(long id) {
+  public void setId(int id) {
     this.id = id;
   }
 
