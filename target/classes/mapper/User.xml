@@ -13,8 +13,8 @@
     </select>
 
     <!--查找重复-->
-    <select id="findByUserName" parameterType="String" resultType="model.User">
-        select * from user where UserName=#{userName};
+    <select id="findByKey" parameterType="java.util.Map" resultType="int">
+        select count(*) from user where ${key}=#{value};
 
     </select>
     <!--创建用户-->

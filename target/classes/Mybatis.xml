@@ -15,9 +15,10 @@
             <!-- 数据库连接相关配置 ,这里动态获取config.properties文件中的内容-->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver" />
-                <property name="url" value="jdbc:mysql://localhost:3306/bookstore" />
+                <property name="url" value="jdbc:mysql://localhost:3306/bookstore?serverTimezone=UTC&amp;zeroDateTimeBehavior=convertToNull" />
                 <property name="username" value="bk" />
                 <property name="password" value="bk123456@" />
+                <property name="poolMaximumActiveConnections" value="30"/>
             </dataSource>
         </environment>
     </environments>
@@ -26,6 +27,10 @@
         <mapper resource="mapper/Book.xml"/>
         <mapper resource="mapper/User.xml"/>
         <mapper resource="mapper/Cart.xml"/>
+        <mapper resource="mapper/Order.xml"/>
+        <mapper resource="mapper/OrderGoods.xml"/>
+        <mapper resource="mapper/Picture.xml"/>
+
     </mappers>
 
 </configuration>

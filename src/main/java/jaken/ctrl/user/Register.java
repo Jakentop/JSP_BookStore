@@ -17,6 +17,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.lang.annotation.ElementType;
 import java.util.Dictionary;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @Description 注册提交接口
@@ -27,7 +29,7 @@ import java.util.Dictionary;
 public class Register extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
-        response.setContentType("text/html");
+        response.setContentType("text/json");
         response.setCharacterEncoding("utf-8");
         User user = new User();
         try {
@@ -45,7 +47,10 @@ public class Register extends HttpServlet {
 
             SqlSession session = SqlSessionFactoryUtil.openSqlSession();
         //        判断是否存在
-        int size=session.selectList("jaken.sql.user.findByUserName", user.getUserName()).size();
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("key", "UserName");
+        map.put("value", user.getUserName());
+        int size=(int)session.selectOne("jaken.sql.user.findByKey", map);
         String res;
 
         if (size == 0) {

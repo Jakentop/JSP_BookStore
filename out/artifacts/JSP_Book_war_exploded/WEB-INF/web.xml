@@ -3,5 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-
+<context-param>
+    <param-name>location</param-name>
+    <param-value>JSP_Book_war_exploded</param-value>
+</context-param>
+    <context-param>
+        <param-name>PicPath</param-name>
+        <param-value>D:/img/</param-value>
+    </context-param>
 </web-app>

@@ -12,6 +12,8 @@ public class Book {
   private java.sql.Timestamp pubDate;
   private String pub;
   private String picture;
+  private long amounts;
+  private String longname;
 
 
   public String getUuid() {
@@ -94,4 +96,19 @@ public class Book {
     this.picture = picture;
   }
 
+  public long getAmounts() {
+    return amounts;
+  }
+
+  public void setAmounts(long amounts) {
+    this.amounts = amounts;
+  }
+
+  public String getLongname() {
+    return longname;
+  }
+
+  public void setLongname(String longname) {
+    this.longname = longname;
+  }
 }

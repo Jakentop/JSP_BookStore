@@ -7,5 +7,20 @@
 　　resultType = "返回实体类对象，使用包.类名"-->
 <mapper namespace="jaken.sql.OrderGoods">
     <!--    查询语句体-->
+<!--    创建每个订单的货物
+        @Param OrderGoods-->
+    <insert id="insertOrderGoods" parameterType="java.util.List" >
+        insert into ordergoods(OrderUUID,BookUUID,Amount)
+        VALUES
+        <foreach collection="list" item="item" separator=",">
+            (#{item.orderUuid},#{item.bookUuid},#{item.amount})
+        </foreach>
+    </insert>
+
+<!--    获取订单详细
+        @Param OrderID-->
+    <select id="getOrderGoodsById" parameterType="String" resultType="model.Ordergoods">
+        select * from ordergoods where OrderUUID=#{OrderID}
+    </select>
 
 </mapper>

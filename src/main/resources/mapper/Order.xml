@@ -6,6 +6,35 @@
 　　parameterType="传入的参数类型"
 　　resultType = "返回实体类对象，使用包.类名"-->
 <mapper namespace="jaken.sql.Order">
+<!--    Mapper映射-->
+
 <!--    查询语句体-->
+
+<!--    创建一个订单
+        @Param Order
+        -->
+    <insert id="insertOneOrder" parameterType="model.Order">
+        insert into `order` set
+        UUID=#{uuid},
+        Date=#{date},
+        OrderInfoId=#{orderInfoId},
+        UserID=#{userId},
+        Tick=#{tick},
+        Status=#{status}
+    </insert>
+<!--    获取某个用户的所有订单
+        @Param UserID-->
+    <select id="getOrderByUserId" parameterType="int" resultType="model.Order">
+        select * from `order` where UserID=#{id}
+    </select>
+    
+<!--    设置订单发货
+        @Param OrderID-->
+    <update id="setStatus">
+        update `order`
+        set Status=1
+        where UUID = #{OrderID};
+    </update>
+
 
 </mapper>

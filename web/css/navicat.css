@@ -1,0 +1,44 @@
+/*导航栏加载*/
+@keyframes navrun {
+    0%{display: none;}
+    1%{
+        display: block;
+        transform: translateY(-60px);
+    }
+}
+.navigate{
+    position: fixed;
+    top:0px;
+    height: 60px;
+    width:100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 999;
+    animation: navrun 1s;
+    line-height: 60px;
+}
+.func a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: white;
+    font-size:16px;
+}
+.func a:hover {
+    color:#FF8726;
+}
+.navigate .github{
+    display: inline-block;
+    width: 60%;
+
+
+
+}
+.navigate .func {
+    display: inline-block;
+    width:30%;
+    text-align: right;
+}
+
+body {
+    margin: 0px;
+    background-color: #ccc;
+}

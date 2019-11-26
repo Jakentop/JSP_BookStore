@@ -19,6 +19,8 @@ public class message {
      * @return true表示操作成功，false标识操作失败
      */
     public static boolean RetMsg(HttpServletResponse response,String status, String msg_title, String info) {
+        response.setCharacterEncoding("utf-8");
+        response.setContentType("text/json");
         PrintWriter out = null;
         try {
             out = response.getWriter();

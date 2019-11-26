@@ -5,7 +5,52 @@
 <!--id ="接口中的方法名"
 　　parameterType="传入的参数类型"
 　　resultType = "返回实体类对象，使用包.类名"-->
-<mapper namespace="jaken.sql.Book">
+<mapper namespace="jaken.sql.book">
 <!--    查询体-->
+
+<!--    根据关键字检索书
+        @Param Name书籍名称-->
+    <select id="Search" parameterType="String" resultType="model.Book">
+        select *
+        from book
+        where Name like '%${1}%'
+    </select>
+
+    <!--    获取联想词
+        @Param Name书籍名称-->
+    <select id="GetMind" parameterType="String" resultType="model.Book">
+        select Name,UUID
+        from book
+        where Name like #{key}
+        LIMIT 0,20;
+    </select>
+
+
+    <!--    添加一本书
+            @Param Key-->
+    <insert id="Add">
+        insert into book
+            (UUID, Name, Brief, Price, PrePrice, Author, PubDate, Pub, Picture,Amounts)
+        Values (#{uuid}, #{name}, #{brief}, #{price}, #{prePrice}, #{author}, #{pubDate}, #{pub}, #{picture},
+                #{amounts});
+    </insert>
+
+<!--    更新图书信息
+        @Param model.Book-->
+    <update id="Change">
+        update book
+        <trim prefix="SET" suffixOverrides="," >
+            <if test="name!=null">name=#{name},</if>
+            <if test="brief!=null">brief=#{brief},</if>
+            <if test="price!=null">price=#{price},</if>
+            <if test="prePrice!=null">prePrice=#{prePrice},</if>
+            <if test="author!=null">author=#{author},</if>
+            <if test="pubDate!=null">pubDate=#{pubDate},</if>
+            <if test="pub!=null">pub=#{pub},</if>
+            <if test="picture!=null">picture=#{picture},</if>
+            <if test="amounts!=null">amounts=#{amounts},</if>
+        </trim>
+        where uuid=#{uuid}
+    </update>
 
 </mapper>

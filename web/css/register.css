@@ -1,0 +1,72 @@
+/*    主体容器*/
+.main {
+    z-index: 999;
+    width: 700px;
+    height: 100%;
+    padding-top: 30px;
+    background-color: rgba(74, 71, 69, 0.5);
+    position: absolute;
+    left:50%;
+    margin-left:-25%;
+
+}
+body{
+    margin:0;
+    padding:0;
+}
+/*标题*/
+.title{
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+    letter-spacing: 8px;
+    color: white;
+}
+/*表格*/
+table {
+    width: 100%;
+    border-spacing: 20px;
+
+}
+/*行*/
+td{
+    height: 35px;
+    line-height: 35px;
+}
+/*列*/
+.td1 {
+    color: white;
+    width: 20%;
+    font-size: 16px;
+}
+.td2 {width: 40%;}
+.valid{
+    width: 40%;
+    font-size: 12px;
+    color:#ff6262;
+    line-height: 12px;
+
+}
+/*input标签*/
+.td2 input {
+    height: 30px;
+    line-height: 30px;
+    width: 90%;
+    padding: 0 5%;
+}
+/*按钮*/
+.buttongroup{
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+.button {
+    display: inline-block;
+    width:150px;
+    height: 35px;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    line-height: 35px;
+    background-color: #FF8726;
+}

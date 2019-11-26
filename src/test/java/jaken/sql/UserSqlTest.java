@@ -18,7 +18,6 @@ public class UserSqlTest {
         SqlSession session = SqlSessionFactoryUtil.openSqlSession();
         User user=new User();
         user.setUserName("test");
-
         int size=session.selectList("jaken.sql.user.findByUserName", user.getUserName()).size();
         String res;
         if (size == 0) {
