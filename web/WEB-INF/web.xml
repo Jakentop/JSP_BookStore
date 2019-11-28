@@ -9,6 +9,6 @@
 </context-param>
     <context-param>
         <param-name>PicPath</param-name>
-        <param-value>D:/img/</param-value>
+        <param-value>D:/Document/Python/当当爬虫/img/</param-value>
     </context-param>
 </web-app>

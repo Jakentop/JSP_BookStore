@@ -7,6 +7,8 @@
   这是用于导入的标题的模板
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%--    引用JSTL标签库--%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div class="navigate">
     <%--    标题Github区域--%>
     <div class="github"></div>
@@ -20,7 +22,6 @@
         <c:if test="${not login_flag}">
             <a href="index.jsp">欢迎！&nbsp;<c:out value="${sessionScope.user.getUserName()}"></c:out> </a>
             <a href="cart.jsp">购物车</a>
-            <a href="#">订单</a>
             <a href="user/logout">退出</a>
         </c:if>
     </div>

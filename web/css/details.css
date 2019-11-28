@@ -1,0 +1,89 @@
+/*清除样式*/
+body {
+    margin: 0;
+
+}
+
+.main{
+    width:80%;
+    margin-left: 8%;
+    margin-top:100px;
+    background-color: #fff;
+    padding:2%;
+}
+.title{
+    font-size: 26px;
+}
+.maininfo{
+    margin-top:20px;
+
+}
+.pic {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+
+}
+.pic img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+/*右边信息*/
+.rightinfo{
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width:60%;
+
+}
+/*书名*/
+.bname{
+    font-size: 18px;
+
+}
+/*价格*/
+.price {
+    width:50%;
+    display: inline-block;
+    margin-top:15px;
+    margin-left:20px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.price span{
+    display: block;
+    width: 49%;
+}
+/*加入购物车按钮*/
+.addbutton {
+    display: inline-block;
+    margin-left: 10%;
+    width: 35%;
+}
+.addbutton a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    width: 150px;
+    height: 40px;
+    background-color: #FF8726;
+    color: white;
+}
+
+/*作者出版信息*/
+.pub_author{
+    margin:3px;
+}
+.pub_author div{
+    margin:5px;
+    margin-top:10px;
+    font-size: 14px;
+}
+/*正文*/
+.bbrief{
+    margin-top:50px;
+    width:80%;
+    margin-left: 10%;
+}

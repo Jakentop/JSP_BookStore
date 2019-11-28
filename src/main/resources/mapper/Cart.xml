@@ -17,20 +17,22 @@
             <id column="book_id" property="uuid"/>
             <result column="book_name" property="name"/>
             <result column="book_price" property="price"/>
+            <result column="book_picture" property="picture"/>
         </association>
     </resultMap>
     <!--    查询语句体-->
 
 <!--    获取购物车列表
         @param id 用户id-->
-    <select id="getList" parameterType="int" resultMap="CartBook">
+    <select id="getList" parameterType="long" resultMap="CartBook">
         select
         cart.ID as cart_id,
         cart.Date as cart_date,
         cart.Amount as cart_amount,
         book.UUID as book_id,
         book.Name as book_name,
-        book.Price as book_price
+        book.Price as book_price,
+        book.Picture as book_picture
         from cart join `book` on `book`.UUID=`cart`.UUID
         where cart.UserID=#{id}
     </select>
@@ -41,7 +43,7 @@
         -->
     <insert id="insertOne" parameterType="java.util.Map">
         insert into cart
-        set UserID=#{userid},UUID=#{bookid},Amount=1;
+        set UserID=#{userId},UUID=#{uuid},Amount=#{amount};
     </insert>
 
 <!--    查询当前书籍是否在购物车中
@@ -50,7 +52,21 @@
     <select id="findByBookId" resultType="model.Cart" parameterType="java.util.Map">
         select * from cart where UserID=#{userid} and UUID=#{bookid};
     </select>
-
+    <!--    获取一条购物车的ID
+            @param userid 用户id
+            @param bookid 书籍id-->
+    <select id="findByCartId" resultMap="CartBook" parameterType="java.util.Map">
+        select
+            cart.ID as cart_id,
+            cart.Date as cart_date,
+            cart.Amount as cart_amount,
+            book.UUID as book_id,
+            book.Name as book_name,
+            book.Price as book_price,
+            book.Picture as book_picture
+        from cart join `book` on `book`.UUID=`cart`.UUID
+        where cart.UserID=#{userid} and cart.ID=#{ID}
+    </select>
 <!--    从购物车中删除一件物品
         @param userid 用户id
         @param ID 书籍id-->

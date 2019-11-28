@@ -47,8 +47,6 @@
     display: inline-block;
     width: 60%;
 
-
-
 }
 .navigate .func {
     display: inline-block;
@@ -90,6 +88,7 @@ body {
     width: 16%;
     padding: 2%;
     margin:2%;
+    vertical-align:top;
     margin-bottom: 5%;
     background-color: #fff;
     display: inline-block;
@@ -99,17 +98,17 @@ body {
     box-shadow:2.5px 2.5px 20px 0px #999;
     transform: translateX(-2px) translateY(-3px);
 
-
-
 }
 .g_pic {
     text-align: center;
     width:100%;
 
+
 }
 
 .g_pic > img{
     width:100%;
+    max-height: 194px;
 }
 
 .dprice{
@@ -125,6 +124,8 @@ body {
 
 .g_title{
     margin-top:10px;
+    font-size:12px ;
+    min-height: 48px;
 }
 
 /*云图css*/
@@ -163,4 +164,8 @@ body {
 
     letter-spacing: 2px;
 
+}
+
+#getnext{
+    background-color: #fff;
 }

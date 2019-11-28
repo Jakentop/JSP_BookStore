@@ -1,5 +1,6 @@
 package test.mybatis.test;
 
+import jaken.fun.message;
 import jaken.sql.SqlSessionFactoryUtil;
 import model.Book;
 import org.apache.ibatis.session.SqlSession;
@@ -43,4 +44,11 @@ public  void Change() {
     System.out.println(res.size());
 
 }
+@Test
+    public void GetBooksRand()
+    {
+        SqlSession session = SqlSessionFactoryUtil.openSqlSession();
+        List<Book> res = session.selectList("jaken.sql.book.GetBooksRand", 10);
+        System.out.print(message.GetJsonPartExclude(res));
+    }
 }

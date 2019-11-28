@@ -8,17 +8,17 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!DOCTYPE html>
   <head>
     <title>BookStore</title>
+
     <link type="text/css" rel="styleSheet" href="css/index.css"/>
       <%--      导航样式--%>
       <link rel="stylesheet" href="css/navicat.css">
 <%--      搜索框样式--%>
       <link type="text/css" rel="stylesheet" href="css/search-form.css"/>
     <script src="./js/Jquery.js"></script>
-<%--    引用JSTL标签库--%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
   </head>
   <body>
   <%--导航栏--%>
@@ -45,27 +45,9 @@
     </section>
     <%--云图--%>
     <div id="tagsList">
-        <a href="#/Article.aspx?kid=1" title="星级评分">星级评分</a>
-        <a href="#/Article.aspx?kid=2" title="层特效">层特效</a>
-        <a href="#/Article.aspx?kid=3" title="关键字">关键字</a>
-        <a href="#/Article.aspx?kid=4" title="拖拽">拖拽</a>
-        <a href="#/Article.aspx?kid=5" title="分页插件">分页插件</a>
-        <a href="#/Article.aspx?kid=6" title="时间插件">时间插件</a>
-        <a href="#/Article.aspx?kid=7" title="弹出层">弹出层</a>
-        <a href="#/Article.aspx?kid=8" title="数据统计">数据统计</a>
-        <a href="#/Article.aspx?kid=9" title="HTML5">HTML5</a>
-        <a href="#/Article.aspx?kid=10" title="置顶特效">置顶特效</a>
-        <a href="#/Article.aspx?kid=11" title="选项卡">选项卡</a>
-        <a href="#/Article.aspx?kid=12" title="导航菜单">导航菜单</a>
-        <a href="#/Article.aspx?kid=13" title="原创">原创</a>
-        <a href="#/Article.aspx?kid=14" title="动画插件">动画插件</a>
-        <a href="#/Article.aspx?kid=15" title="实用特效">实用特效</a>
-        <a href="#/Article.aspx?kid=16" title="table插件">table插件</a>
-        <a href="#/Article.aspx?kid=17" title="文字特效">文字特效</a>
-        <a href="#/Article.aspx?kid=18" title="图片特效">图片特效</a>
-        <a href="#/Article.aspx?kid=19" title="在线客服">在线客服</a>
-        <a href="#/Article.aspx?kid=20" title="瀑布流">瀑布流</a>
-        <a href="#/Article.aspx?kid=21" title="网友蘑菇">网友蘑菇</a>
+        <a></a>
+        <a></a>
+        <a></a>
     </div>
 
 </div>
@@ -75,185 +57,25 @@
 <div>猜你喜欢</div>
 </div>
   <div class="main">
-    <div class="good">
-        <div class="g_pic">
-            <img src="img/1.jpg"/>
-        </div>
-        <div class="dprice">
-            <span class="pre_price">
-            ￥120.0
-            </span>
-            <span class="g_price">
-            ￥300.2
-            </span>
-        </div>
-        <div class="g_title">
-            这是测试的书籍
-        </div>
-    </div>
-      <div class="good">
-          <div class="g_pic">
-              <img src="img/1.jpg"/>
-          </div>
-          <div class="dprice">
-            <span class="pre_price">
-            ￥120.0
-            </span>
-              <span class="g_price">
-            ￥300.2
-            </span>
-          </div>
-          <div class="g_title">
-              这是测试的书籍
-          </div>
-      </div>
-      <div class="good">
-          <div class="g_pic">
-              <img src="img/1.jpg"/>
-          </div>
-          <div class="dprice">
-            <span class="pre_price">
-            ￥120.0
-            </span>
-              <span class="g_price">
-            ￥300.2
-            </span>
-          </div>
-          <div class="g_title">
-              这是测试的书籍
-          </div>
-      </div>
-      <div class="good">
-          <div class="g_pic">
-              <img src="img/1.jpg"/>
-          </div>
-          <div class="dprice">
-            <span class="pre_price">
-            ￥120.0
-            </span>
-              <span class="g_price">
-            ￥300.2
-            </span>
-          </div>
-          <div class="g_title">
-              这是测试的书籍
-          </div>
-      </div>
-      <div class="good">
-          <div class="g_pic">
-              <img src="img/1.jpg"/>
-          </div>
-          <div class="dprice">
-            <span class="pre_price">
-            ￥120.0
-            </span>
-              <span class="g_price">
-            ￥300.2
-            </span>
-          </div>
-          <div class="g_title">
-              这是测试的书籍
-          </div>
-      </div>
-      <div class="good">
-          <div class="g_pic">
-              <img src="img/1.jpg"/>
-          </div>
-          <div class="dprice">
-            <span class="pre_price">
-            ￥120.0
-            </span>
-              <span class="g_price">
-            ￥300.2
-            </span>
-          </div>
-          <div class="g_title">
-              这是测试的书籍
-          </div>
-      </div>
-      <div class="good">
-          <div class="g_pic">
-              <img src="img/1.jpg"/>
-          </div>
-          <div class="dprice">
-            <span class="pre_price">
-            ￥120.0
-            </span>
-              <span class="g_price">
-            ￥300.2
-            </span>
-          </div>
-          <div class="g_title">
-              这是测试的书籍
-          </div>
-      </div>
-      <div class="good">
-          <div class="g_pic">
-              <img src="img/1.jpg"/>
-          </div>
-          <div class="dprice">
-            <span class="pre_price">
-            ￥120.0
-            </span>
-              <span class="g_price">
-            ￥300.2
-            </span>
-          </div>
-          <div class="g_title">
-              这是测试的书籍
-          </div>
-      </div>
-      <div class="good">
-          <div class="g_pic">
-              <img src="img/1.jpg"/>
-          </div>
-          <div class="dprice">
-            <span class="pre_price">
-            ￥120.0
-            </span>
-              <span class="g_price">
-            ￥300.2
-            </span>
-          </div>
-          <div class="g_title">
-              这是测试的书籍
-          </div>
-      </div>
-      <div class="good">
-          <div class="g_pic">
-              <img src="img/1.jpg"/>
-          </div>
-          <div class="dprice">
-            <span class="pre_price">
-            ￥120.0
-            </span>
-              <span class="g_price">
-            ￥300.2
-            </span>
-          </div>
-          <div class="g_title">
-              这是测试的书籍
-          </div>
-      </div>
-      <div class="good">
-          <div class="g_pic">
-              <img src="img/1.jpg"/>
-          </div>
-          <div class="dprice">
-            <span class="pre_price">
-            ￥120.0
-            </span>
-              <span class="g_price">
-            ￥300.2
-            </span>
-          </div>
-          <div class="g_title">
-              这是测试的书籍
-          </div>
-      </div>
+
+<%--        <div class="good">--%>
+<%--            <div class="g_pic">--%>
+<%--                <img src="img/1.jpg"/>--%>
+<%--            </div>--%>
+<%--            <div class="dprice">--%>
+<%--            <span class="pre_price">--%>
+<%--            ￥120.0--%>
+<%--            </span>--%>
+<%--                <span class="g_price">--%>
+<%--            ￥300.2--%>
+<%--            </span>--%>
+<%--            </div>--%>
+<%--            <div class="g_title">--%>
+<%--                这是测试的书籍--%>
+<%--            </div>--%>
+<%--        </div>--%>
+
   </div>
-
-
 
   </body>
 <%--搜索框--%>
@@ -276,18 +98,7 @@
       // 提交方法
       function submitFn(obj, evt){
           value = $(obj).find('.search-input').val().trim();
-
-          _html = "Yup yup! Your search text sounds like this: ";
-          if(!value.length){
-              _html = "Yup yup! Add some text friend :D";
-          }
-          else{
-              _html += "<b>" + value + "</b>";
-          }
-
-          $(obj).find('.result-container').html('<span>' + _html + '</span>');
-          $(obj).find('.result-container').fadeIn(100);
-
+          window.location.href='result.jsp?key='+value
           evt.preventDefault();
       }
       //自动联想事件绑定
@@ -304,12 +115,10 @@
                           $("#tagsList").empty();
                           //添加元素
                           for (i = 0; i < info.length; i++) {
-                              $("#tagsList").append("<a href='"+info[i]['link']+"'>"+info[i]['key']+"</a>");
+                              $("#tagsList").append("<a href='details.jsp?uuid="+info[i]['link']+"'>"+info[i]['key']+"</a>");
                           }
                           tspeed=20;
                       }
-
-
                   }
               }});
       });
@@ -317,8 +126,76 @@
       setTimeout(function () {
           $(".search-icon").click();
       },800);
-
+  //  首次联想
+      $.ajax({
+          url: "index/getmindkey?key=计算机",
+          async: false,
+          success: function(res){
+              console.log(res);
+              if (res['status'] == 'ok') {
+                  info=JSON.parse(res['info']);
+                  if (info.length > 0) {
+                      tspeed=200000;
+                      //刷新元素
+                      $("#tagsList").empty();
+                      //添加元素
+                      for (i = 0; i < info.length; i++) {
+                          $("#tagsList").append("<a href='details.jsp?uuid="+info[i]['link']+"'>"+info[i]['key']+"</a>");
+                      }
+                      tspeed=20;
+                  }
+              }
+          }});
   </script>
 <%--云图--%>
 <script src="js/tags.js"></script>
+<%--猜你喜欢--%>
+<script>
+    function update_list() {
+        $.ajax({
+            url:'index/guessyoulike',
+            data:{num: 8},
+            type:'POST',
+            success:function (res) {
+                if (res.status == 'ok') {
+                    //执行渲染猜你喜欢
+                    res = JSON.parse(res.info);
+                    var f=$('.main');//父节点添加
+                    c=0
+                    $.each(res, function(i,val){
+
+                        f.append("<div class=\"good\" id=\"good"+i+"\"></div>");
+                        c+=1
+                        var n=$("#good"+i);
+                        n.append("<div class=\"g_pic\">\n" +
+                            "            <img src=\"pic/get?uuid="+val.picture+"\"/>\n" +
+                            "        </div>\n" +
+                            "        <div class=\"dprice\">\n" +
+                            "            <span class=\"pre_price\">\n" +
+                            "            ￥"+val.prePrice+"\n" +
+                            "            </span>\n" +
+                            "            <span class=\"g_price\">\n" +
+                            "            ￥"+val.price+"\n" +
+                            "            </span>\n" +
+                            "        </div>\n" +
+                            "        <div class=\"g_title\">\n" +
+                            "            "+val.name.substring(0,45)+"" +
+                            "        </div>");
+                        n.click(function () {
+                            window.location.href="details.jsp?uuid="+val.uuid;
+                        })
+                    });
+                }
+            }
+
+        })
+    }
+    //首次加载默认数据
+    update_list();
+
+
+
+
+
+</script>
 </html>

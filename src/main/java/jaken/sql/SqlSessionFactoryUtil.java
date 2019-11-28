@@ -44,4 +44,13 @@ public class SqlSessionFactoryUtil {
         return sqlSessionFactory.openSession(true);
     }
 
+    public static SqlSession openSqlSession(boolean autoCommit)
+    {
+        if (sqlSessionFactory == null){
+            initSqlSessionFactory();
+        }
+        return sqlSessionFactory.openSession(autoCommit);
+    }
+
+
 }

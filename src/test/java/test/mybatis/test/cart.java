@@ -2,6 +2,7 @@ package test.mybatis.test;
 
 import jaken.sql.SqlSessionFactoryUtil;
 import model.Cart;
+import model.cCartBook;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.After;
@@ -46,6 +47,16 @@ private Cart cart;
         temp.put("bookid", uuid);
         session.insert("jaken.sql.cart.insertOne",temp);
 
+    }
+    @Test
+    public void findByCartId() {
+
+        HashMap param = new HashMap<String, Long>();
+        param.put("userid", 1);
+        param.put("ID",12);
+        SqlSession sqlSession = SqlSessionFactoryUtil.openSqlSession();
+        cCartBook temp = (cCartBook) sqlSession.selectOne("jaken.sql.cart.findByCartId", param);
+        System.out.print(temp);
     }
 
     @Test

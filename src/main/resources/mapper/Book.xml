@@ -9,11 +9,18 @@
 <!--    查询体-->
 
 <!--    根据关键字检索书
+
         @Param Name书籍名称-->
     <select id="Search" parameterType="String" resultType="model.Book">
         select *
         from book
-        where Name like '%${1}%'
+        where Name like #{key}
+    </select>
+
+<!--    根据UUID获取书的详细信息
+        @Param uuid书ID-->
+    <select id="FindByID" parameterType="String" resultType="model.Book">
+        select * from book where UUID=#{uuid}
     </select>
 
     <!--    获取联想词
@@ -24,7 +31,6 @@
         where Name like #{key}
         LIMIT 0,20;
     </select>
-
 
     <!--    添加一本书
             @Param Key-->
@@ -53,4 +59,9 @@
         where uuid=#{uuid}
     </update>
 
+<!--    随机选取N本书
+        @Param int 获取随机书的数量-->
+    <select id="GetBooksRand" parameterType="int" resultType="model.Book">
+        select uuid,name,price,prePrice,picture from book order by rand() limit #{count}
+    </select>
 </mapper>
