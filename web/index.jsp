@@ -49,9 +49,11 @@
         <a></a>
         <a></a>
     </div>
-
 </div>
-
+<%--箭头过渡--%>
+  <div style="text-align: center;">
+      <img style="max-width: 4%;animation: flag_down 2s infinite linear ;" src="img/index_flag.png">
+  </div>
 <%--猜你喜欢--%>
 <div class="guess_you_like_main">
 <div>猜你喜欢</div>

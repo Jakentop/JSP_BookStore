@@ -6,48 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10f0802e-7198-438a-82d1-00e2a7329a0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jaken/ctrl/cart/AddOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jaken/ctrl/index/GuessYouLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jaken/ctrl/order/CreateOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fun/json/hashmap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/jaken/sql/cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/test/hashmap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/details.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/order.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/result.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/details.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/order.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JSP_Book_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JSP_Book_war_exploded.xml" afterDir="false" />
+    <list default="true" id="10f0802e-7198-438a-82d1-00e2a7329a0e" name="Default Changelist" comment="提交GItHub">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/zyz.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/REDME.md" beforeDir="false" afterPath="$PROJECT_DIR$/REDME.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/WEB-INF/classes/Mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/WEB-INF/classes/Mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/WEB-INF/classes/jaken/sql/SqlSessionFactoryUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/WEB-INF/classes/jaken/sql/SqlSessionFactoryUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/WEB-INF/classes/mapper/Book.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/WEB-INF/classes/mapper/Book.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/mybatis-3.4.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JSP_Book_war_exploded/mysql-connector-java-8.0.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jaken/sql/SqlSessionFactoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jaken/sql/SqlSessionFactoryUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/Book.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/Book.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/Cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/Cart.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/Order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/Order.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/OrderGoods.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/OrderGoods.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fun/json/json.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fun/json/json.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/mybatis/test/TBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/mybatis/test/TBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/mybatis/test/cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/mybatis/test/cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jaken/sql/SqlSessionFactoryUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jaken/sql/SqlSessionFactoryUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/Book.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/Book.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/cart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/navicate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/navicate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/register.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -99,41 +65,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/cart.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2620">
-              <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
+            <state relative-caret-position="300">
+              <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/REDME.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="240">
-                <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="508">
+                <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jaken/ctrl/index/GetMindKey.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="33" column="69" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -164,6 +112,7 @@
       <find>son_check</find>
       <find>cartMain_hd</find>
       <find>title</find>
+      <find>search_tag</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -196,7 +145,6 @@
         <option value="$PROJECT_DIR$/web/css/register.css" />
         <option value="$PROJECT_DIR$/web/css/login.css" />
         <option value="$PROJECT_DIR$/src/main/java/jaken/ctrl/user/Register.java" />
-        <option value="$PROJECT_DIR$/web/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/model/Book.java" />
         <option value="$PROJECT_DIR$/web/css/search-form.css" />
         <option value="$PROJECT_DIR$/web/js/tags.js" />
@@ -208,7 +156,6 @@
         <option value="$PROJECT_DIR$/web/css/cartreset.css" />
         <option value="$PROJECT_DIR$/src/test/java/test/mybatis/test/TBook.java" />
         <option value="$PROJECT_DIR$/src/main/java/jaken/ctrl/index/GuessYouLike.java" />
-        <option value="$PROJECT_DIR$/web/css/index.css" />
         <option value="$PROJECT_DIR$/src/test/java/test/test/hashmap.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/Book.xml" />
@@ -236,6 +183,8 @@
         <option value="$PROJECT_DIR$/web/order.jsp" />
         <option value="$PROJECT_DIR$/web/navicate.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/css/index.css" />
+        <option value="$PROJECT_DIR$/web/register.jsp" />
         <option value="$PROJECT_DIR$/REDME.md" />
       </list>
     </option>
@@ -292,7 +241,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,47 +249,11 @@
               <item name="Jsp_Final_Exam" type="b2602c69:ProjectViewProjectNode" />
               <item name="JSP_Book" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Jsp_Final_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP_Book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jsp_Final_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP_Book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jsp_Final_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP_Book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jsp_Final_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP_Book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jsp_Final_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP_Book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jsp_Final_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP_Book" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,7 +263,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GitHubCode/WenJuan" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ch15" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -358,7 +271,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -555,6 +468,10 @@
       <workItem from="1574950030169" duration="1625000" />
       <workItem from="1574954447867" duration="614000" />
       <workItem from="1574955161941" duration="589000" />
+      <workItem from="1574956190983" duration="120000" />
+      <workItem from="1575017063396" duration="3570000" />
+      <workItem from="1575022934293" duration="3842000" />
+      <workItem from="1575088124760" duration="705000" />
     </task>
     <task id="LOCAL-00001" summary="开始fun包">
       <created>1574214748342</created>
@@ -577,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574833812269</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="基本上完成了90%啦">
+      <created>1574956308502</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574956308502</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -613,15 +537,16 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163609000" />
+    <option name="totallyTimeSpent" value="171846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Web" order="2" sideWeight="0.2725451" side_tool="true" weight="0.20107238" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.728" visible="true" weight="0.20911528" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.728" visible="true" weight="0.22050938" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" weight="0.3282123" />
@@ -633,13 +558,13 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3282123" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.34078214" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.34078214" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.3282123" />
       <window_info anchor="bottom" id="TODO" order="14" />
       <window_info anchor="bottom" id="Debug" order="15" weight="0.3980447" />
-      <window_info active="true" anchor="bottom" id="Statistic" order="16" visible="true" weight="0.3784916" />
+      <window_info anchor="bottom" id="Statistic" order="16" weight="0.3784916" />
       <window_info anchor="right" id="Database" order="0" weight="0.3297587" />
       <window_info anchor="right" id="CDI" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -686,7 +611,8 @@
     <MESSAGE value="开始fun包" />
     <MESSAGE value="完成首页的界面" />
     <MESSAGE value="写购物车" />
-    <option name="LAST_COMMIT_MESSAGE" value="写购物车" />
+    <MESSAGE value="基本上完成了90%啦" />
+    <option name="LAST_COMMIT_MESSAGE" value="基本上完成了90%啦" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -737,13 +663,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/jaken/ctrl/user/Logout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/canvas-particle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1540">
@@ -794,24 +713,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/details.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="129" lean-forward="true" selection-start-line="81" selection-end-line="129" />
-          <folding>
-            <element signature="e#9#244#0" />
-            <element signature="e#255#375#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/result.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1107,34 +1008,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jaken/ctrl/index/GetMindKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="33" column="69" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/cart.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state>
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="e#9#244#0" />
+            <element signature="e#255#375#0" />
+            <element signature="e#387#528#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2620">
-          <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
+        <state relative-caret-position="300">
+          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/REDME.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="240">
-            <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="508">
+            <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jaken/ctrl/index/GetMindKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="33" column="69" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="69" />
         </state>
       </provider>
     </entry>

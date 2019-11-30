@@ -11,9 +11,14 @@
     <title>注册</title>
     <script src="./js/Jquery.js"></script>
     <link type="text/css" rel="styleSheet" href="css/register.css"/>
+    <%--      导航样式--%>
+    <link rel="stylesheet" href="css/navicat.css">
 </head>
 <body>
-
+<%--导航栏--%>
+<%@include file="navicate.jsp"%>
+<%--占位符--%>
+<div style="margin-top:50px;"></div>
 <%--注册页面--%>
 <div class="main">
     <div class="title">用户注册</div>

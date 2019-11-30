@@ -23,6 +23,22 @@
         transform: translateY(-60px);
     }
 }
+/*箭头提示动画*/
+@keyframes flag_down{
+    10%{
+
+    }
+    50% {
+        transform: translateY(10px);
+
+    }
+    90%{
+        transform: translateY(0px);
+    }
+    100%{
+
+    }
+}
 
 .navigate{
     position: fixed;
@@ -67,7 +83,7 @@ body {
 }
 .search_tag{
     width:100%;
-    height: 500px;
+    height: 430px;
 }
 .guess_you_like_main
 {
